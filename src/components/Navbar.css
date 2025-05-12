@@ -1,0 +1,52 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #1E1F21; /* Dark red for Navbar */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    box-shadow: 0 2px 8px rgba(97, 84, 84, 0.603);
+    font-family: 'Poppins', sans-serif; /* Add cozy font here too */
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    color: #FBDB93; /* Light yellow for logo */
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    cursor: pointer;
+    color: #DE9B7E; /* Light yellow text */
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 20px;
+  }
+  
+  .nav-links li:hover {
+    background-color:  #DE9B7E; /* Orange-red background on hover */
+    color: #1E1F21; /* Keep the light yellow text color */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  /* Mobile Responsive */
+  @media screen and (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      background: #FFFDF6;
+      position: absolute;
+      top: 80px;
+      right: 20px;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+  }
+  
